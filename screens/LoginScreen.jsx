@@ -34,6 +34,9 @@ const LoginScreen = () => {
 
     return (
         <KeyboardAvoidingView style={styles.container} behavior="padding">
+            <View>
+                <Text style={styles.header}>ReadingList</Text>
+            </View>
             <View style={styles.inputContainer}>
             <TextInput 
             placeholder="Email" 
@@ -71,6 +74,14 @@ const LoginScreen = () => {
 export default LoginScreen
 
 const styles = StyleSheet.create({
+    header: {
+        justifyContent:'center',
+        alignItems:'center',
+        fontSize:50,
+        paddingBottom:100,
+        color:'#DDA0DD',
+        fontWeight:"bold"
+    },
     container: {
         flex: 1,
         justifyContent:'center', 
